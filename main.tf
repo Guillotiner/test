@@ -13,6 +13,6 @@ provider "volcenginecc" {
   }
 }
 
-resource "volcenginecc_ResourceShare_ResourceShare" "example" {
+resource "volcenginecc_resourceshare_resource_share" "example" {
   resource_share_name = "cc-testsjhAuto-minimal"
 }
