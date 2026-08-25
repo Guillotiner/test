@@ -9,7 +9,7 @@ terraform {
 provider "volcenginecc" {
   region = "cn-guilin-boe"
   endpoints = {
-    cloudcontrolapi = "cloudcontrol.cn-guilin-boe.volcengineapi-test.com"
+    cloudcontrolapi = "open.stable.volcengineapi-test.com"
   }
 }
 
