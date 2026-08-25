@@ -6,7 +6,13 @@ terraform {
   }
 }
 
-resource "volcenginecc_vpc_vpc" "demo" {
-  vpc_name   = "iac-git-demo-vpc"
-  cidr_block = "192.168.0.0/24"
+provider "volcenginecc" {
+  region = "cn-beijing"
+  endpoints = {
+    cloudcontrolapi = "cloudcontrol.cn-guilin-boe.volcengineapi-test.com"
+  }
+}
+
+resource "volcenginecc_ResourceShare_ResourceShare" "example" {
+  resource_share_name = "cc-testsjhAuto-minimal"
 }
