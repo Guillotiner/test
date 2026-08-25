@@ -9,9 +9,10 @@ terraform {
 provider "volcenginecc" {
   region = "cn-beijing"
   endpoints = {
-    cloudcontrolapi = "cloudcontrol.cn-beijing-boe.volcengineapi-test.com"
+    cloudcontrolapi = "open.volcengineapi.com"
   }
 }
+
 
 resource "volcenginecc_resourceshare_resource_share" "example" {
   resource_share_name = "cc-testsjhAuto-minimal"
