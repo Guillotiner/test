@@ -1,10 +1,7 @@
 terraform {
   required_providers {
     volcenginecc = {
-      source  = "volcengine/volcenginecc"
-    }
-    time = {
-      source = "hashicorp/time"
+      source = "volcengine/volcenginecc"
     }
   }
 }
@@ -16,7 +13,7 @@ variable "region" {
   type        = string
   description = "地域"
 
-  default     = "cn-beijing-selfdrive"
+  default     = "cn-guilin-boe"
 }
 
 variable "endpoint" {
